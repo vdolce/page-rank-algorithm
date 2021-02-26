@@ -1,7 +1,8 @@
-# page-rank-algorithm
+# Page-Rank Algorithm
+
 The PageRank algorithm was created by Google’s co-founders. In PageRank’s algorithm, a website is more important if it is linked to by other important websites, and links from less important websites have their links weighted less.
 
-# Random Surfer Model
+### Random Surfer Model
 The random surfer model imagines a surfer who starts with a web page at random, and then randomly chooses links to follow.
 A page’s PageRank can be described as the probability that a random surfer is on that page at any given time. After all, if there are more links to a particular page, then it’s more likely that a random surfer will end up on that page. Moreover, a link from a more important site is more likely to be clicked on than a link from a less important site that fewer pages link to, so this model handles weighting links by their importance as well.
 
@@ -9,7 +10,7 @@ This model can be interpreted as a Markov Chain, where each page represents a st
 
 Our random surfer now starts by choosing a page at random, and then, for each additional sample we’d like to generate, chooses a link from the current page at random with probability d, and chooses any page at random with probability 1 - d. If we keep track of how many times each page has shown up as a sample, we can treat the proportion of states that were on a given page as its PageRank.
 
-# Iterative Algorithm
+### Iterative Algorithm
 
 We can also define a page’s PageRank using a recursive mathematical expression. Let PR(p) be the PageRank of a given page p: the probability that a random surfer ends up on that page. How do we define PR(p)? Well, we know there are two ways that a random surfer could end up on the page:
 
