@@ -1,6 +1,7 @@
 # Page-Rank Algorithm
 
 The PageRank algorithm was created by Google’s co-founders. In PageRank’s algorithm, a website is more important if it is linked to by other important websites, and links from less important websites have their links weighted less.
+
 In this project you can find two diffent version of the PageRank algorithm:
 
 ### 1. Random Surfer Model
